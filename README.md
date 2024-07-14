@@ -1,6 +1,6 @@
 # MusiConGen
 
-MusiConGen is a project for deep learning research on conditinoal music generation. MusiConGen is based on pretrained [Musicgen](https://github.com/facebookresearch/audiocraft) with additional controls: Rhythm and Chords. The project contains inference and training code.
+MusiConGen is a project for deep learning research on conditinoal music generation. MusiConGen is based on pretrained [Musicgen](https://github.com/facebookresearch/audiocraft) with additional controls: Rhythm and Chords. The project contains inference, training code and training data(youtube list).
 
 
 ## Installation
@@ -37,6 +37,9 @@ python generate_chord_beat.py
 ```
 
 ## Training 
+
+### Training Data
+The training data is provided as json format in 5_genre_songs_list.json. The listed suffixes are for youtube links.
 
 ### Data Preprocessing
 Before training, one should put audio data in `audiocraft/dataset/$DIR_OF_YOUR_DATA$/full`.
@@ -126,4 +129,4 @@ dora run -d solver=musicgen/multigpu_finetune \
 use `export_weight.py` with your training signature `sig` to export your weight to `output_dir`.
 
 ## License
-The license of code and model weights follows the LICENSE of MusicGen in [LICENSE file](https://github.com/facebookresearch/audiocraft/blob/main/LICENSE) and [LICENSE_weights file](https://github.com/facebookresearch/audiocraft/blob/main/LICENSE_weights).
+The license of code and model weights follows the LICENSE file, LICENSE of MusicGen in [LICENSE file](https://github.com/facebookresearch/audiocraft/blob/main/LICENSE) and [LICENSE_weights file](https://github.com/facebookresearch/audiocraft/blob/main/LICENSE_weights).

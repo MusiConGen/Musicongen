@@ -1,5 +1,4 @@
 audiocraft/__pycache__/
-audiocraft/evaluation
 audiocraft/ckpt/*
 audiocraft/output_samples
 audiocraft/training_weights/*
